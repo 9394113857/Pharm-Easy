@@ -1,0 +1,7 @@
+# Install Webpack and Webpack CLI as development dependencies
+npm install webpack webpack-cli --save-dev
+
+code package.json
+
+# Run the build command to bundle your project files using Webpack
+npm run build
