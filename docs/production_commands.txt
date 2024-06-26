@@ -3,5 +3,11 @@ npm install webpack webpack-cli --save-dev
 
 code package.json
 
-# Run the build command to bundle your project files using Webpack
+npm install
+
+# Once your dependencies are installed and Webpack is configured, 
+# you can run the build command to generate the production-ready bundle:
 npm run build
+# This will typically create a dist folder with optimized files for deployment.
+
+

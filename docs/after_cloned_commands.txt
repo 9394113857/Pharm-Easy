@@ -1,0 +1,13 @@
+# Install http-server globally using npm (Node Package Manager)
+'npm install -g http-server'
+
+# Check the version of http-server to ensure it is installed correctly
+'http-server -v'
+
+# Start the http-server to serve files from the current directory
+'http-server'
+
+# This command checks if http-server is installed (by checking its version). 
+# If it is not installed, it will run the 
+# npm install -g http-server command to install it globally.
+'http-server -v || npm install -g http-server'

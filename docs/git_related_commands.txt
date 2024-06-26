@@ -1,0 +1,44 @@
+# Step 1: Create a .gitignore file
+New-Item -ItemType file -Name .gitignore
+
+# Step 2: Open the .gitignore file in VSCode to add your entries
+code .gitignore
+
+# (Add your desired entries to the .gitignore file and save it)
+
+# Step 3: Initialize Git repository if not done already
+git init
+
+# Step 4: Add all files to the staging area
+git add .
+
+# Step 5: Commit the changes
+git commit -m "Initial commit"
+
+# Step 6: Add remote repository URL (replace <your-repo-url> with your actual URL)
+git remote add origin <your-repo-url>
+
+# Step 7: Push to the remote repository
+git push -u origin main
+
+# Step 8: Check the status of your repository to ensure everything is correct
+git status
+
+# Step 9: Pull the latest changes from the remote repository (replace "raghu" with the actual branch name if it's different)
+git pull origin raghu
+
+# Step 10: Repeat the process of checking status, staging changes, committing, and pushing as needed
+# Check the status of your repository
+git status
+
+# Stage any new or modified files
+git add .
+
+# Commit your changes with an appropriate message
+git commit -m "Your commit message"
+
+# Push your changes to the remote repository
+git push origin main
+
+# Pull the latest changes from the remote repository to keep your local repository up to date
+git pull origin raghu
