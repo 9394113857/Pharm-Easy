@@ -1,0 +1,79 @@
+# Git Branch Management Commands: Creating, Switching, Renaming, Merging, Deleting, and Pushing
+
+# 1. **Create and Switch to a New Branch**
+git checkout -b chnages   # Create and switch to the 'chnages' branch
+
+# 2. **Check the Current Branches**
+git branch
+# Output:
+# * chnages
+#   raghu
+
+# 3. **Rename the Current Branch**
+git branch -m changes   # Rename 'chnages' to 'changes'
+
+# 4. **Check the Branches After Renaming**
+git branch
+# Output:
+# * changes
+#   raghu
+
+# 5. **Switch to Another Branch**
+git checkout raghu   # Switch to the 'raghu' branch
+
+# 6. **Merge Changes from One Branch to Another**
+git merge changes    # Merge 'changes' into 'raghu'
+
+# 7. **Push Changes to Remote Repository**
+git push origin raghu    # Push the 'raghu' branch to the remote repository
+
+# 8. **Delete the Local Branch**
+git branch -d changes   # Delete the local 'changes' branch (after merging)
+
+# 9. **Delete the Remote Branch**
+git push origin --delete changes   # Delete the remote 'changes' branch
+
+# **Viewing Branches**:
+
+# 1. **To view local branches**:
+git branch
+# Output:
+# * changes
+#   raghu
+
+# 2. **To view both local and remote branches**:
+git branch -a
+# Output:
+# * changes
+#   raghu
+#   remotes/origin/HEAD -> origin/main
+#   remotes/origin/main
+#   remotes/origin/raghu
+
+# 3. **To view remote branches only**:
+git branch -r
+# Output:
+# remotes/origin/HEAD -> origin/main
+# remotes/origin/main
+# remotes/origin/raghu
+
+# Summary of Commands:
+# - `git checkout -b <branch_name>`: Create and switch to a new branch.
+# - `git branch`: List local branches.
+# - `git branch -a`: List both local and remote branches.
+# - `git branch -r`: List remote branches only.
+# - `git branch -m <new_name>`: Rename a branch.
+# - `git merge <branch_name>`: Merge one branch into another.
+# - `git push origin <branch_name>`: Push a branch to the remote repository.
+# - `git branch -d <branch_name>`: Delete a local branch.
+# - `git push origin --delete <branch_name>`: Delete a remote branch.
+
+----------------------------------------------------------------------------
+Here's the information in a simpler form:
+•	Local Branches: These are the branches that exist on your computer. In your case, they are changes and raghu.
+•	Remote Branches: These are the branches stored on the remote server (like GitHub). In your case, they are origin/main and origin/raghu.
+•	Default Remote Branch: This is the main branch on the remote repository. For you, it is origin/main, as indicated by HEAD.
+This output helps you understand which branches exist locally and remotely, and shows which one is set as the default remote branch (origin/main).
+
+
+
